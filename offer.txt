@@ -1,0 +1,18 @@
+[
+    {
+        "id": "service",
+        "title": "Sprzedaż opon",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus vitae augue auctor cursus. Maecenas ut tempor leo. Suspendisse eu lectus nec dui dictum rutrum non eu ex. Nunc vitae ultricies ipsum. Praesent lacinia porta quam."
+    },
+    {
+        "id": "shop",
+        "title": "Wymiana opon",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus vitae augue auctor cursus. Maecenas ut tempor leo. Suspendisse eu lectus nec dui dictum rutrum non eu ex. Nunc vitae ultricies ipsum. Praesent lacinia porta quam."
+    },
+    {
+        "id": "forkl",
+        "title": "Wynajem wózków",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus vitae augue auctor cursus. Maecenas ut tempor leo. Suspendisse eu lectus nec dui dictum rutrum non eu ex. Nunc vitae ultricies ipsum. Praesent lacinia porta quam."
+    }
+
+]

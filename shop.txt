@@ -1,0 +1,88 @@
+<div class="shop-cont">
+<h2>Sprzedaż opon</h2>
+Jesteśmy autoryzowanym przedstawicielem opon firmy Solideal.
+Dysponujemy bardzo dobrze wyposażonym magazynem opon, w większości przypadków jesteśmy w stanie zrealizować Państwa zamówienie w ciągu 24h.
+Opony wysyłamy firmami kurierskimi na terenie całej Polski.
+<br>
+<h3>TRANSPORT WEWNĘTRZNY</h3>
+</div>
+
+<div class = "offer-lft white">
+    <p>
+    <b>Opony superelastyczne (pełne)</b><br>
+        Ich konstrukcja pozwala na długi okres pracy na jednym komplecie opon i ogranicza do minimum przestoje wózka wynikające z uszkodzenia opony. Najważniejszą rzeczą jest odpowiedni dobór ogumienia do warunków i intensywności pracy oraz rodzaju podłoża po którym porusza się wózek.
+    </p>
+</div>
+<div class = "offer-rght black">
+    <ul class="tires-list">
+        <li><b>MODEL</b></li>
+        <li><a href="files/RES 330 ECOMATIC.pdf" target="blank">SOLIDEAL RES330 ECOMATIC</a></li>
+        <li><a href="files/RES 550 MAGNUM.pdf" target="blank">SOLIDEAL RES550 MAGNUM</a></li>
+        <li><a href="files/RES 660 XTREME.pdf" target="blank">SOLIDEAL RES660 XTREME</a></li>
+        <li><a href="files/SOLIDAIR.pdf" target="blank">SOLIDEAL LT</a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+<div class="myclear"></div>
+<div class = "offer-lft white">   
+    <p>
+    <b>Opony pneumatyczne</b><br>
+        Ich konstrukcja zapewnia wysoki komfort pracy operatora wózka i dba o zmniejszenie zużycia zawieszenia wózka.
+    </p>
+</div>
+<div class = "offer-rght black">
+    <ul class="tires-list">
+        <li><b>MODEL</b></li>
+        <li><a href="files/AIR 550.pdf" target="blank">SOLIDEAL AIR550</a></li>
+        <li><a href="files/Hauler.pdf" target="blank">SOLIDEAL HAULER</a></li>
+    </ul>
+</div>
+<div class="myclear"></div> 
+<div class = "offer-lft white"> 
+    <p>
+    <b>Opaski amortyzujące</b><br>
+        Ich kluczowym zadaniem jest zapewnienie dla wózka znakomitej stabilizacji przy wysokim składowaniu, jednocześnie konstrukcja pozwala znieść duże obciążenia.
+    </p>
+</div>
+<div class = "offer-rght black"> 
+    <ul class="tires-list">
+        <li><b>MODEL</b></li>
+        <li><a href="files/OPASKI-AMORTYZUJACE-PON 550.pdf" target="blank">SOLIDEAL PON 550</a></li>
+        <li><a href="files/OPASKI-AMORTYZUJACE-PON 555.pdf" target="blank">SOLIDEAL PON 555</a></li>
+    </ul>
+</div>
+<div class="myclear"></div>
+<br>
+<div class="shop-cont">    
+    <h3>ROLNICTWO</h3>
+    <p>
+        Wśród dużej ilości produktów dedykowanych dla branży rolniczej pomożemy we właściwym doborze opon do Państwa zapotrzebowania. Zaczynając od powierzchni zielonych w obszarach zurba
+        nizowanych, poprzez tereny rolne a kończąc na trudnych warunkach leśnych.
+    </p>
+    <p>
+    <b>Systemy gąsienic wymiennych</b><br>
+        Do zastosowań w minikoparkach, w kompaktowych miniładowarkach (CTL) i w miniładowarkach terenowych (MTL). Nowatorskim rozwiązaniem są gąsienice do kołowych miniładowarek o skręcie poślizgowym, które są montowane bezpośrednio na kołach maszyny.
+    </p>
+    <ul class="tires-list">
+        <li><a href="files/SYSTEM-GASIENIC-WYMIENNYCH.pdf" target="blank">SYSTEM GĄSIENIC WYMIENNYCH</a></li>
+    </ul>
+</div>    
+<br>
+<div class="shop-cont">    
+    <h3>OPONY DO MASZYN BUDOWLANYCH</h3>
+    <p>
+        Szeroka gama opon budowlanych w naszej ofercie pozwala nam na zaproponowanie Państwu opon od najmniejszych maszyn – miniładowarki, poprzez koparko-ładowarki, koparki kołowe, po takie urządzenia, jak ładowarki, wozidła i równiarki.
+    </p>
+</div>
+<br>
+<div class="shop-cont">    
+    <h3>FELGI PRZMYSŁOWE</h3>
+    <p>
+        Proponujemy wszystkie typy felg przemysłowych, które są wykorzystywane w:
+        <ul class="tires-list-forkl">
+            <li>wózkach widłowych – felgi pierścieniowe, felgi typu QUICK, felgi skręcane;</li>
+            <li>maszynach budowlanych – felgi tłoczone DROP CENTER, felgi wieloelementowe;</li>
+            <li>maszynach przeładunkowych</li>
+        </ul>
+    </p>
+</div>
