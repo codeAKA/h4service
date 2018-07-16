@@ -1,25 +1,39 @@
 // create NEWS and add to NEWS CONTAINER
 
+var newsContainer = document.querySelector('.news-txt');
 
-function createNews() {
+function createNews(pict, title, txtcont) {
 
-    var newsContainer = document.querySelector('.news-txt');
     var infoContainer = document.createElement('div');
-    infoContainer.classList.add('info-container');
+    var textContainer = document.createElement('div');
+    var clearClass = document.createElement('div');
     var infoImg = document.createElement('img');
-    var infoTitle = document.createElement('h3');
+    var infoTitle = document.createElement('p');
     var infoTxt = document.createElement('p');
+
+    infoImg.src = pict;
+    infoTitle.innerHTML = title;
+    infoTxt.innerHTML = txtcont;
+    infoTitle.style.fontWeight = "bold";
+
     infoContainer.setAttribute('class', 'info-cont');
+    textContainer.setAttribute('class', 'txt-info-cont');
+    clearClass.setAttribute('class', 'clear');
+
+    textContainer.appendChild(infoTitle);
+    textContainer.appendChild(infoTxt);
 
     infoContainer.appendChild(infoImg);
-    infoContainer.appendChild(infoTitle);
-    infoContainer.appendChild(infoTxt);
+    infoContainer.appendChild(textContainer);
+    infoContainer.appendChild(clearClass);
+
+    newsContainer.appendChild(infoContainer);
 
 }
 
 
 
-function loadNews() {
+function loadNews(from, to) {
     
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'news.json', true);
@@ -29,7 +43,11 @@ function loadNews() {
             
             var news = JSON.parse(this.responseText);
 
+            for (var i = from; i <= to; i++) {
 
+                createNews(news[i].picture, news[i].title, news[i].content);
+
+            }
             
         }
     }
@@ -37,17 +55,4 @@ function loadNews() {
     xhr.send();
 }
 
-/*
-var output = "";
-
-if (output == "") {
-
-    for (var i = 0; i <= 4; i++) {
-
-    output = '<ul class="news-list">'
-
-    '</ul>'
-    }
-
-}
-*/
+window.addEventListener("load", loadNews(0, 2));

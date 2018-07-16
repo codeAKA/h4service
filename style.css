@@ -120,6 +120,28 @@ body {
 	border: 1px solid rgb(98, 99, 99);
 	margin-bottom: 50px;
 }
+/* JSON file sytles */
+.info-cont {
+	width: 100%;
+	overflow: auto;
+}
+.info-cont img {
+	float: left;
+	width: 25%;
+	height: auto;
+	margin-top: 30px;
+}
+.txt-info-cont {
+	float: right;
+	width: 70%;
+}
+.txt-info-cont p {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* ---- JSON file sytles --- */
+
 .photo {
 	width: 100%;
 	height: 50vH;
@@ -414,6 +436,11 @@ body {
 .news-txt img {
 	clear: both;
 	width: calc(100% - 2px);
+}
+/* JSON styles */
+.txt-info-cont {
+	clear: both;
+	width: 100%;
 }
 /* external files - "shop.txt" */
 .shop-cont {
