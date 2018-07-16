@@ -6,10 +6,11 @@ function createNews(pict, title, txtcont) {
 
     var infoContainer = document.createElement('div');
     var textContainer = document.createElement('div');
+    var clearClass = document.createElement('div');
     var infoImg = document.createElement('img');
     var infoTitle = document.createElement('p');
     var infoTxt = document.createElement('p');
-    
+
     infoImg.src = pict;
     infoTitle.innerHTML = title;
     infoTxt.innerHTML = txtcont;
@@ -17,12 +18,14 @@ function createNews(pict, title, txtcont) {
 
     infoContainer.setAttribute('class', 'info-cont');
     textContainer.setAttribute('class', 'txt-info-cont');
+    clearClass.setAttribute('class', 'clear');
 
     textContainer.appendChild(infoTitle);
     textContainer.appendChild(infoTxt);
 
     infoContainer.appendChild(infoImg);
     infoContainer.appendChild(textContainer);
+    infoContainer.appendChild(clearClass);
 
     newsContainer.appendChild(infoContainer);
 
