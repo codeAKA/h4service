@@ -1,23 +1,65 @@
 [
     {
         "numb": 1,
-        "picture": "www.h4service.pl/images/img1.jpeg",
+        "picture": "images/img1.jpg",
         "date": "15.06.2018",
         "title": "Nowa prasa mobilna",
         "content": "Posiadamy prasę mobilną do wymiany opon w wózkach widłowych. Prasa ta umożliwia nam wymianę opon u klienta. Na prasie tej możemy wymieniać opony do 15\". Zapraszamy do kontaktu i współpracy."
     },
     {
         "numb": 2,
-        "picture": "www.h4service.pl/images/img2.jpeg",
+        "picture": "images/img2.jpg",
         "date": "15.07.2018",
         "title": "O naszej pracy",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.."
     },
     {
         "numb": 3,
-        "picture": "www.h4service.pl/images/img3.jpeg",
+        "picture": "images/img3.jpg",
         "date": "15.08.2018",
         "title": "Proces wymiany opony w wózku widłowym",
         "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-    }    
+    },
+    {
+        "numb": 4,
+        "picture": "images/img1.jpg",
+        "date": "15.06.2018",
+        "title": "tytuł 4",
+        "content": "Posiadamy prasę mobilną do wymiany opon w wózkach widłowych. Prasa ta umożliwia nam wymianę opon u klienta. Na prasie tej możemy wymieniać opony do 15\". Zapraszamy do kontaktu i współpracy."
+    },
+    {
+        "numb": 5,
+        "picture": "images/img2.jpg",
+        "date": "15.07.2018",
+        "title": "tytuł 5",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.."
+    },
+    {
+        "numb": 6,
+        "picture": "images/img3.jpg",
+        "date": "15.08.2018",
+        "title": "tytuł 6",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+        "numb": 7,
+        "picture": "images/img1.jpg",
+        "date": "15.06.2018",
+        "title": "tytuł 7",
+        "content": "Posiadamy prasę mobilną do wymiany opon w wózkach widłowych. Prasa ta umożliwia nam wymianę opon u klienta. Na prasie tej możemy wymieniać opony do 15\". Zapraszamy do kontaktu i współpracy."
+    },
+    {
+        "numb": 8,
+        "picture": "images/img2.jpg",
+        "date": "15.07.2018",
+        "title": "tytuł 8",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.."
+    },
+    {
+        "numb": 9,
+        "picture": "images/img3.jpg",
+        "date": "15.08.2018",
+        "title": "tytuł 9",
+        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    }      
 ]
