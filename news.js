@@ -78,6 +78,8 @@ function truncatePar(str, len) {
         str = str + trun;
     }
 
+    return str;
+
 }
 
 window.addEventListener("load", function(){

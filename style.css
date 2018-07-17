@@ -124,6 +124,7 @@ body {
 .info-cont {
 	width: 100%;
 	overflow: auto;
+	border-bottom: 1px solid gray;
 }
 .info-cont img {
 	float: left;
