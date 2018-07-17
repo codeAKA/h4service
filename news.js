@@ -2,36 +2,7 @@
 
 var newsContainer = document.querySelector('.news-txt');
 
-function createNews(pict, title, txtcont) {
-
-    var infoContainer = document.createElement('div');
-    var textContainer = document.createElement('div');
-    var clearClass = document.createElement('div');
-    var infoImg = document.createElement('img');
-    var infoTitle = document.createElement('p');
-    var infoTxt = document.createElement('p');
-
-    infoImg.src = pict;
-    infoTitle.innerHTML = title;
-    infoTxt.innerHTML = txtcont;
-    infoTitle.style.fontWeight = "bold";
-
-    infoContainer.setAttribute('class', 'info-cont');
-    textContainer.setAttribute('class', 'txt-info-cont');
-    clearClass.setAttribute('class', 'clear');
-
-    textContainer.appendChild(infoTitle);
-    textContainer.appendChild(infoTxt);
-
-    infoContainer.appendChild(infoImg);
-    infoContainer.appendChild(textContainer);
-    infoContainer.appendChild(clearClass);
-
-    newsContainer.appendChild(infoContainer);
-
-}
-
-
+// LOAD content NEWS SECTION
 
 function loadNews(from, to) {
     
@@ -53,6 +24,71 @@ function loadNews(from, to) {
     }
     
     xhr.send();
+
+}
+
+// CREATE content NEWS SECTION
+
+function createNews(pict, title, txtcont) {
+
+    var infoContainer = document.createElement('div');
+    var textContainer = document.createElement('div');
+    var clearClass = document.createElement('div');
+    var infoImg = document.createElement('img');
+    var infoTitle = document.createElement('p');
+    var infoTxt = document.createElement('p');
+
+    infoImg.src = pict;
+    infoTitle.innerHTML = title;
+    infoTxt.innerHTML = txtcont;
+    infoTitle.style.fontWeight = "bold";
+
+    infoContainer.setAttribute('class', 'info-cont');
+    textContainer.setAttribute('class', 'txt-info-cont');
+    clearClass.setAttribute('class', 'clear');
+    infoTxt.setAttribute('class', 'info-paragraph');
+
+    textContainer.appendChild(infoTitle);
+    textContainer.appendChild(infoTxt);
+
+    infoContainer.appendChild(infoImg);
+    infoContainer.appendChild(textContainer);
+    infoContainer.appendChild(clearClass);
+
+    newsContainer.appendChild(infoContainer);
+
 }
 
 window.addEventListener("load", loadNews(0, 2));
+
+var infoPar = document.querySelectorAll(".info-paragraph");
+
+// TRUNCATE PARAGRAPHS of NEWS SECTION
+
+function truncatePar(str, len) {
+
+    var innerTrun = "";
+    var trun = "<a class=\"trun-par\">" + innerTrun + "</a>";
+
+    if (str.length > len) {
+        innerTrun += "rozwiń";
+        str = str.substring(0, len - 10) + "..." + trun;
+    } else {
+        innerTrun += "zwiń";
+        str = str + trun;
+    }
+
+}
+
+window.addEventListener("load", function(){
+
+    for (var i = 0; i < infoPar.length; i++) {
+
+        truncatePar(infoPar[i], 150);
+
+    }
+    
+});
+
+
+
