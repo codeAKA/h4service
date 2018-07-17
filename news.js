@@ -81,7 +81,7 @@ function truncatePar(str, len) {
     return str;
 
 }
-
+// add if (infoPar.length > 150) ...function truncatePar...
 window.addEventListener("load", function(){
 
     for (var i = 0; i < infoPar.length; i++) {
