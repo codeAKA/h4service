@@ -63,7 +63,31 @@ window.addEventListener("load", loadNews(0, 2));
 
 var infoPar = document.querySelectorAll(".info-paragraph");
 
+// CONDITION of TRUNCATE PARAGRAPHS of NEWS SECTION
+
+
+
+
+
+
+
 // TRUNCATE PARAGRAPHS of NEWS SECTION
+
+function truncate(arr) {    
+
+    for (var i = 0; i < arr.length; i++) {
+      
+      if (arr[i].length > 150) {
+        
+        arr[i] = truncatePar(arr[i], 150); // arr[i].textNode / textContent ???
+        
+      }
+      
+    }
+
+  return arr;
+}
+
 
 function truncatePar(str, len) {
 
@@ -81,16 +105,8 @@ function truncatePar(str, len) {
     return str;
 
 }
-// add if (infoPar.length > 150) ...function truncatePar...
-window.addEventListener("load", function(){
 
-    for (var i = 0; i < infoPar.length; i++) {
-
-        truncatePar(infoPar[i], 150);
-
-    }
-    
-});
+window.addEventListener("load", truncate(infoPar));
 
 
 
