@@ -86,13 +86,14 @@ function truncate(arr) {
     }
 
   return arr;
+  
 }
 
 
 function truncatePar(str, len) {
 
     var innerTrun = "";
-    var trun = "<a class=\"trun-par\">" + innerTrun + "</a>";
+    var trun = "<span class=\"trun-par\">" + innerTrun + "</span>";
 
     if (str.length > len) {
         innerTrun += "rozwiń";
@@ -105,6 +106,8 @@ function truncatePar(str, len) {
     return str;
 
 }
+
+
 
 window.addEventListener("load", truncate(infoPar));
 
