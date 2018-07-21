@@ -61,7 +61,7 @@ function createNews(pict, title, txtcont) {
 
 window.addEventListener("load", loadNews(0, 2));
 
-var infoPar = document.querySelectorAll(".info-paragraph");
+
 
 // CONDITION of TRUNCATE PARAGRAPHS of NEWS SECTION
 
@@ -106,7 +106,11 @@ function truncatePar(str, len) {
 
 }
 
+var infoPar = document.querySelectorAll(".info-paragraph");
+
 window.addEventListener("load", truncate(infoPar));
+
+console.log(truncate(infoPar))
 
 
 
