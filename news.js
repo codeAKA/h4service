@@ -2,6 +2,10 @@
 
 var newsContainer = document.querySelector('.news-txt');
 
+// wiev MORE span element
+
+var showMore = " <span class=\"trun-par\">rozwiń</span>";
+
 // LOAD content NEWS SECTION
 
 function loadNews(from, to) {
@@ -19,6 +23,10 @@ function loadNews(from, to) {
                 createNews(news[i].picture, news[i].title, news[i].content);
 
             }
+
+            var infoPar = document.querySelectorAll(".info-paragraph");
+
+            truncate(infoPar);
             
         }
     }
@@ -77,40 +85,39 @@ function truncate(arr) {
 
     for (var i = 0; i < arr.length; i++) {
       
-      if (arr[i].length > 150) {
+      if (arr[i].innerHTML.length > 150) {
         
-        arr[i] = truncatePar(arr[i], 150); // arr[i].textNode / textContent ???
+        arr[i].innerHTML = truncatePar(arr[i].innerHTML, 150);
         
       }
       
     }
 
   return arr;
+  
 }
 
 
 function truncatePar(str, len) {
 
-    var innerTrun = "";
-    var trun = "<a class=\"trun-par\">" + innerTrun + "</a>";
-
     if (str.length > len) {
-        innerTrun += "rozwiń";
-        str = str.substring(0, len - 10) + "..." + trun;
+
+        showMore.innerHTML = "rozwiń";
+       
+        str = str.substring(0, len - 10) + "..." + showMore;
+
     } else {
-        innerTrun += "zwiń";
-        str = str + trun;
+
+        showMore.innerHTML = "zwiń";
+
+        str = str + showMore;
+
     }
 
     return str;
 
 }
 
-var infoPar = document.querySelectorAll(".info-paragraph");
-
-window.addEventListener("load", truncate(infoPar));
-
-console.log(truncate(infoPar))
 
 
 
