@@ -2,11 +2,13 @@
 
 var newsContainer = document.querySelector('.news-txt');
 
+/* ------------ PREV VERSION --------------
 // wiev MORE span element
 
 var showMore = " <span class=\"trun-par\">rozwiń</span>";
 
 var span = " <span class=\"trun-txt\"></span>";
+---------------------------------------- */
 
 // LOAD content NEWS SECTION
 
@@ -26,9 +28,11 @@ function loadNews(from, to) {
 
             }
 
+            /* ------------ PREV VERSION --------------
             var infoPar = document.querySelectorAll(".info-paragraph");
 
             truncate(infoPar, 150);
+            --------------------------------- */
             
         }
     }
@@ -67,18 +71,10 @@ function createNews(pict, title, txtcont) {
 
         infoTxt.appendChild(spanDisp);
 
-
         // sipdFunc() - to show/hidde made elements
         // https://stackoverflow.com/questions/36798005/append-multiple-items-in-javascript
 
     }
-
-
-
-
-
-
-
 
 
     infoContainer.setAttribute('class', 'info-cont');
@@ -103,7 +99,7 @@ function createNews(pict, title, txtcont) {
 
 window.addEventListener("load", loadNews(0, 2));
 
-
+// ------------ PREV VERSION (all lines below) --------------
 
 // CONDITION of TRUNCATE PARAGRAPHS of NEWS SECTION
 
@@ -114,7 +110,7 @@ window.addEventListener("load", loadNews(0, 2));
 
 
 // TRUNCATE PARAGRAPHS of NEWS SECTION
-
+/*
 function truncate(arr, len) {    
 
     for (var i = 0; i < arr.length; i++) {
@@ -144,7 +140,7 @@ function truncatePar(str, len) {
     return str;
 
 }
-
+*/
 
 /*
 function truncatePar(str, len) {
@@ -167,7 +163,7 @@ function truncatePar(str, len) {
 
 }
 */
-
+/*
 showMore.addEventListener("click", function listenTOme() {
 
     if (this.previousSibling.style.display == "none") {
@@ -177,7 +173,7 @@ showMore.addEventListener("click", function listenTOme() {
     }
 
 });
-
+*/
 
 
 
