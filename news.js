@@ -48,15 +48,47 @@ function createNews(pict, title, txtcont) {
     var infoTitle = document.createElement('p');
     var infoTxt = document.createElement('p');
 
-    infoImg.src = pict;
-    infoTitle.innerHTML = title;
-    infoTxt.innerHTML = txtcont;
-    infoTitle.style.fontWeight = "bold";
+    if (txtcont.length <= 150) {
+
+        infoTxt.innerHTML = txtcont;
+
+    } else {
+
+        var spanDisp = document.createElement('span');
+        var spanHidden = document.createElement('span');
+        var moreTxt = document.createElement('span');
+
+        spanDisp.setAttribute('class', 'span-disp');
+        spanHidden.setAttribute('class', 'span-hidden');
+        moreTxt.setAttribute('class', 'disp-button');
+
+        spanDisp.innerHTML = textcont.substring(0, 140);
+        spanHidden.innerHTML = textcont.substring(140, textcont.length);
+
+        infoTxt.appendChild(spanDisp);
+
+
+        // sipdFunc() - to show/hidde made elements
+        // https://stackoverflow.com/questions/36798005/append-multiple-items-in-javascript
+
+    }
+
+
+
+
+
+
+
+
 
     infoContainer.setAttribute('class', 'info-cont');
     textContainer.setAttribute('class', 'txt-info-cont');
     clearClass.setAttribute('class', 'clear');
     infoTxt.setAttribute('class', 'info-paragraph');
+
+    infoImg.src = pict;
+    infoTitle.innerHTML = title;
+    infoTitle.style.fontWeight = "bold";
 
     textContainer.appendChild(infoTitle);
     textContainer.appendChild(infoTxt);
