@@ -1,16 +1,9 @@
-// create NEWS and add to NEWS CONTAINER
+// --- create NEWS and add to NEWS CONTAINER ---
 
 var newsContainer = document.querySelector('.news-txt');
 
-/* ------------ PREV VERSION --------------
-// wiev MORE span element
 
-var showMore = " <span class=\"trun-par\">rozwiń</span>";
-
-var span = " <span class=\"trun-txt\"></span>";
----------------------------------------- */
-
-// LOAD content NEWS SECTION
+// LOAD content of NEWS SECTION
 
 function loadNews(from, to) {
     
@@ -18,6 +11,7 @@ function loadNews(from, to) {
     xhr.open('GET', 'news.json', true);
 
     xhr.onreadystatechange = function() {
+        
         if (this.readyState == 4 && this.status == 200) {
             
             var news = JSON.parse(this.responseText);
@@ -27,12 +21,6 @@ function loadNews(from, to) {
                 createNews(news[i].picture, news[i].title, news[i].content);
 
             }
-
-            /* ------------ PREV VERSION --------------
-            var infoPar = document.querySelectorAll(".info-paragraph");
-
-            truncate(infoPar, 150);
-            --------------------------------- */
             
         }
     }
@@ -41,7 +29,7 @@ function loadNews(from, to) {
 
 }
 
-// CREATE content NEWS SECTION
+// CREATE content of NEWS SECTION
 
 function createNews(pict, title, txtcont) {
 
@@ -52,11 +40,15 @@ function createNews(pict, title, txtcont) {
     var infoTitle = document.createElement('p');
     var infoTxt = document.createElement('p');
 
+    // if appear condition of TOO LONG TEXT, HIDDE part of it
+
     if (txtcont.length <= 150) {
 
         infoTxt.innerHTML = txtcont;
 
     } else {
+
+        var cutInd = txtcont.indexOf(" ", 140);
 
         var spanDisp = document.createElement('span');
         var spanHidden = document.createElement('span');
@@ -66,13 +58,27 @@ function createNews(pict, title, txtcont) {
         spanHidden.setAttribute('class', 'span-hidden');
         moreTxt.setAttribute('class', 'disp-button');
 
-        spanDisp.innerHTML = textcont.substring(0, 140);
-        spanHidden.innerHTML = textcont.substring(140, textcont.length);
+        spanDisp.innerHTML = txtcont.substring(0, cutInd);
+        spanHidden.innerHTML = txtcont.substring(cutInd, txtcont.length);
+        moreTxt.innerHTML = "... rozwiń";
+
+        spanHidden.style.display = "none";
+        moreTxt.style.color = "#006AA3";
+
+        moreTxt.addEventListener("click", function () {
+            if (this.previousSibling.style.display == "inline") {
+                this.previousSibling.style.display = "none";
+                this.innerHTML = "... rozwiń";
+                
+            } else {
+                this.previousSibling.style.display = "inline";
+                this.innerHTML = " zwiń";
+            }
+        });
 
         infoTxt.appendChild(spanDisp);
-
-        // sipdFunc() - to show/hidde made elements
-        // https://stackoverflow.com/questions/36798005/append-multiple-items-in-javascript
+        infoTxt.appendChild(spanHidden);
+        infoTxt.appendChild(moreTxt);
 
     }
 
@@ -98,85 +104,3 @@ function createNews(pict, title, txtcont) {
 }
 
 window.addEventListener("load", loadNews(0, 2));
-
-// ------------ PREV VERSION (all lines below) --------------
-
-// CONDITION of TRUNCATE PARAGRAPHS of NEWS SECTION
-
-
-
-
-
-
-
-// TRUNCATE PARAGRAPHS of NEWS SECTION
-/*
-function truncate(arr, len) {    
-
-    for (var i = 0; i < arr.length; i++) {
-      
-      if (arr[i].innerHTML.length > len) {
-        
-        arr[i].innerHTML = truncatePar(arr[i].innerHTML, len);
-        
-      }
-      
-    }
-
-  return arr;
-  
-}
-
-function truncatePar(str, len) {
-
-    span.innerHTML = str.substring(len - 10, str.length);
-
-    
-
-    str = str.substring(0, len - 10) + "... " + span + showMore;
-
-    
-
-    return str;
-
-}
-*/
-
-/*
-function truncatePar(str, len) {
-
-    if (str.length > len) {
-
-        showMore.innerHTML = "rozwiń";
-       
-        str = str.substring(0, len - 10) + "..." + showMore;
-
-    } else {
-
-        showMore.innerHTML = "zwiń";
-
-        str = str + showMore;
-
-    }
-
-    return str;
-
-}
-*/
-/*
-showMore.addEventListener("click", function listenTOme() {
-
-    if (this.previousSibling.style.display == "none") {
-        this.previousSibling.style.display = "block";
-    } else {
-        this.previousSibling.style.display = "none";
-    }
-
-});
-*/
-
-
-
-
-
-
