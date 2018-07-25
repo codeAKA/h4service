@@ -1,6 +1,7 @@
 // --- create NEWS and add to NEWS CONTAINER ---
 
 var newsContainer = document.querySelector('.news-txt');
+var moreNews = document.querySelector('.more-news');
 
 
 // LOAD content of NEWS SECTION
@@ -22,6 +23,8 @@ function loadNews(from, to) {
 
             }
             
+            // - function to check length of load and Count of loaded news - ???
+
         }
     }
     
@@ -103,4 +106,12 @@ function createNews(pict, title, txtcont) {
 
 }
 
-window.addEventListener("load", loadNews(0, 2));
+window.addEventListener('load', loadNews(0, 2));
+
+// ----- load NEWS using BUTTON -----
+
+moreNews.addEventListener('click', function loadOFnews() {
+
+    loadNews(3, 5);
+
+});
