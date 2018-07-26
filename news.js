@@ -1,7 +1,7 @@
 // --- create NEWS and add to NEWS CONTAINER ---
 
 var newsContainer = document.querySelector('.news-txt');
-var moreNews = document.querySelector('.more-news');
+var newsBtn = document.querySelector('.more-news');
 
 
 // LOAD content of NEWS SECTION
@@ -110,8 +110,31 @@ window.addEventListener('load', loadNews(0, 2));
 
 // ----- load NEWS using BUTTON -----
 
-moreNews.addEventListener('click', function loadOFnews() {
+newsBtn.addEventListener('click', function loadOFnews() {
 
-    loadNews(3, 5);
+    var loadedNews = document.getElementsByClassName('info-cont');
+    var newsLen = loadedNews.length;
+
+    if (newsLen < 9 ) {
+
+        loadNews(newsLen, 9);
+        this.style.transform = "scaleY(-1)";
+
+    }  
+    
+    for (var i = 3; i < newsLen; i++) {
+    
+        if (loadedNews[i].style.display == 'none') {
+
+            loadedNews[i].style.display = 'block';
+            this.style.transform = "scaleY(-1)";
+        
+        } else {
+
+            loadedNews[i].style.display = 'none';
+            this.style.transform = "scaleY(1)";
+
+        }
+    }
 
 });

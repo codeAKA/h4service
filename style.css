@@ -125,6 +125,11 @@ body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+/*
+.roete {
+	transform: 'rotate(180 deg)';
+}
+*/
 /* JSON file sytles */
 .info-cont {
 	width: 100%;
@@ -311,11 +316,6 @@ body {
 	width: 50%;
 	margin-right: 40%;
 }
-/*
-.black {
-	background-color: #454343;
-}
-*/
 .offer-rght {
 	width: calc(50% - 1px);
 	height: 100%;
