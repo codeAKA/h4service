@@ -2,6 +2,7 @@
 // add EVENT to BUTTON
 
 var more = document.querySelectorAll(".read-more");
+var currentObject = null;
 
 for (var i = 0; i < more.length; i ++) {
 
@@ -17,6 +18,7 @@ var content = document.querySelectorAll(".cont-text");
 var contain = document.querySelectorAll(".cont-ain");
 var current;
 
+
     for (var j = 0; j < content.length; j ++) {
 
         content[j].innerHTML = "";
@@ -29,6 +31,16 @@ var current;
             current = content[j].classList[content[j].classList.length - 1];
 
             console.log(current, content[j]);
+
+            console.log(j)
+            console.log(currentObject)
+
+            if (currentObject == j) {
+                currentObject = null;
+                return;
+            }
+
+            currentObject = j;
 
             function loadAllCont() {
 

@@ -201,6 +201,14 @@ body {
 	padding-bottom: 30px;
 	line-height: 1.8;
 }
+.contact-content {
+	display: block;
+	width: 50%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
 .icon {
 	box-sizing: border-box;
 	float: left;
@@ -264,6 +272,10 @@ body {
 	text-align: center;
 	color: white;
 	letter-spacing: 1.5px;
+}
+.footer-link {
+	text-decoration: none;
+	color: white;
 }
 /* rwd menu */
 .rwd-menu {
@@ -502,5 +514,8 @@ body {
 	}
 	.offer-lft, .offer-rght, .shop-cont, .cont-inside, h2, .cont-footer {
 		font-size: 15px;;
+	}
+	.contact-content {
+		width: 100%;
 	}
 }
